@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='regislogin.css') }}">
+    <title>Rejestracja</title>
+</head>
+<body>
+    <div class="box"> 
+        <div class="form">
+            <form method="POST" action="/register">
+                <h1>Rejestracja</h1>
+                <div class="inputBox">
+                    <input type="text" id="username" name="username" required>
+                    <span>Nazwa użytkownika</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="password" name="password" required>
+                    <span>Hasło</span>
+                    <i></i>
+                </div>
+                <input type="submit" value="Zarejestruj">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
